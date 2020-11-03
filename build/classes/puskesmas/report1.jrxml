@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="730" pageHeight="490" orientation="Landscape" columnWidth="690" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bcfb3516-4704-458f-bb7d-5cab337ff191">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from pasien]]>
+	</queryString>
+	<field name="kd_pasien" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pasien" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="umur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="102" splitType="Stretch">
+			<image>
+				<reportElement uuid="9f4a8d53-969d-45b4-88d5-4e33018114ff" x="0" y="-8" width="213" height="110"/>
+				<imageExpression><![CDATA["C:\\Users\\Rizky\\Documents\\puskesmas.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="5fa3df2c-b0af-468f-a853-4f0e43f93f32" x="0" y="15" width="690" height="33"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  KARTU PASIEN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bdcd9a72-7ffc-4deb-befc-44b2525429cd" x="0" y="56" width="690" height="33"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  PUSKESMAS KOTA GARUT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="208" splitType="Stretch">
+			<line>
+				<reportElement uuid="ef5cf13d-ac0a-42af-b546-5cc51142a348" x="0" y="0" width="690" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="631b6b72-07e1-472c-a1bd-3f376489f37e" x="187" y="25" width="143" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[KODE PASIEN        :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="631b6b72-07e1-472c-a1bd-3f376489f37e" x="187" y="64" width="143" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[NAMA PASIEN        :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="631b6b72-07e1-472c-a1bd-3f376489f37e" x="187" y="142" width="143" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[JENIS KELAMIN      :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="631b6b72-07e1-472c-a1bd-3f376489f37e" x="187" y="182" width="143" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ALAMAT                  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="631b6b72-07e1-472c-a1bd-3f376489f37e" x="187" y="104" width="143" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[UMUR                      :]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="b1afae5b-0076-433b-82c3-2ce9c49b5bdf" mode="Transparent" x="391" y="25" width="204" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kd_pasien}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="be3eaac1-d1ca-4a78-a0cb-3d8fc624fbb6" x="391" y="64" width="204" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_pasien}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="11d923fc-db21-42a5-9dec-b86b0510c101" x="391" y="104" width="204" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{umur}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e3024a7b-fa03-4846-96cf-629df857f28c" x="391" y="142" width="204" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8779b417-5329-4f2e-894b-84314948acbc" x="391" y="182" width="204" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="98" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="bd461a34-1250-446c-831f-46b1501376e8" x="0" y="58" width="690" height="24"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KARTU HARAP DIBAWA SETIAP KALI BEROBAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bd461a34-1250-446c-831f-46b1501376e8" x="0" y="14" width="690" height="24"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DEMI PELAYANAN TERBAIK]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="ef5cf13d-ac0a-42af-b546-5cc51142a348" x="0" y="0" width="690" height="1"/>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>

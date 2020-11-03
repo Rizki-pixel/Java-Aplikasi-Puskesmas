@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="kartupasien" language="groovy" pageWidth="590" pageHeight="482" columnWidth="550" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3521d241-3f18-440e-95ee-2cdef2186452">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from pasien]]>
+	</queryString>
+	<field name="KdPsn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NmPsn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AlPsn01" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AlPsn02" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="KtPsn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="KpPsn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TlPsn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="136" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5fa3df2c-b0af-468f-a853-4f0e43f93f32" x="0" y="16" width="572" height="33"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  KARTU PASIEN]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="9f4a8d53-969d-45b4-88d5-4e33018114ff" x="-21" y="0" width="213" height="115"/>
+				<imageExpression><![CDATA["C:\\Users\\Rizky\\Documents\\puskesmas.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="bdcd9a72-7ffc-4deb-befc-44b2525429cd" x="0" y="60" width="572" height="33"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  PUSKESMAS KOTA GARUT]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="ef5cf13d-ac0a-42af-b546-5cc51142a348" x="0" y="125" width="549" height="1"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="295" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="631b6b72-07e1-472c-a1bd-3f376489f37e" x="40" y="12" width="123" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[NAMA                 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="631b6b72-07e1-472c-a1bd-3f376489f37e" x="40" y="51" width="123" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[UMUR                :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="631b6b72-07e1-472c-a1bd-3f376489f37e" x="40" y="91" width="123" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[JENIS KELAMIN  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="631b6b72-07e1-472c-a1bd-3f376489f37e" x="40" y="129" width="123" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ALAMAT             :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="631b6b72-07e1-472c-a1bd-3f376489f37e" x="40" y="169" width="123" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[TELEPON           :]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="eb7e6de4-34e7-42c1-bff9-a2eee8f25fe7" x="1" y="215" width="549" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="09fde0e4-fdb3-4c67-b5d2-36fcdb64c4f8" x="213" y="12" width="336" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NmPsn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="09fde0e4-fdb3-4c67-b5d2-36fcdb64c4f8" x="213" y="51" width="336" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AlPsn01}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="09fde0e4-fdb3-4c67-b5d2-36fcdb64c4f8" x="213" y="91" width="336" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AlPsn02}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="09fde0e4-fdb3-4c67-b5d2-36fcdb64c4f8" x="213" y="129" width="336" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{KtPsn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="09fde0e4-fdb3-4c67-b5d2-36fcdb64c4f8" x="213" y="169" width="336" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TlPsn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="bd461a34-1250-446c-831f-46b1501376e8" x="1" y="230" width="549" height="24"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KARTU HARAP DIBAWA SETIAP KALI BEROBAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bd461a34-1250-446c-831f-46b1501376e8" x="1" y="266" width="549" height="24"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HARAP DIBAWA SETIAP KALI BEROBAT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+</jasperReport>
